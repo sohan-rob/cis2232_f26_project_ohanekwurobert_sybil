@@ -13,6 +13,25 @@ public class ClubMember {
     private int missedMeetings;
     private double actualBalance; // calculation is NOT coded for this assignment
 
+//    private ClubMember(double rate, int active, int paid, int missed) {
+//
+//        member.setMonthlyDuesRate(rate);
+//        member.setMonthsActive(active);
+//        member.setMonthsPaid(paid);
+//        member.setMissedMeetings(missed);
+//    }
+
+    public ClubMember(int id, double actualBalance, String memberName, double monthlyDuesRate, String joinDate, int monthsActive, int monthsPaid, int missedMeetings) {
+        this.id = id;
+        this.actualBalance = actualBalance;
+        this.memberName = memberName;
+        this.monthlyDuesRate = monthlyDuesRate;
+        this.joinDate = joinDate;
+        this.monthsActive = monthsActive;
+        this.monthsPaid = monthsPaid;
+        this.missedMeetings = missedMeetings;
+    }
+
     public ClubMember() {
     }
     /** Prompt the user for the member's details. */
